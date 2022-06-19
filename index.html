@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css3/reset.css" />
+    <link rel="stylesheet" href="./css3/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div type="number" id="display" readonly>
+        <p id="input"></p>
+        <p id="line"></p>
+        <p id="result"></p>
+      </div>
+      <div class="keysContainer">
+        <div class="numbers">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>0</li>
+          <li data-action="decimal" style="font-size: 24px">.</li>
+          <li data-action="calculate">=</li>
+        </div>
+        <div class="operators">
+          <li data-action="clearAll">CA</li>
+          <li data-action="add">+</li>
+          <li data-action="subtract">-</li>
+          <li data-action="multiply" style="font-size: 24px">*</li>
+          <li data-action="divide">/</li>
+          <li data-action="delete">del</li>
+        </div>
+      </div>
+    </div>
+    <!-- ÷ -->
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

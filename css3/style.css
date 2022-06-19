@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.calculator {
+  background-color: #677853;
+  border-radius: 10px;
+  border: 2px solid #263238;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.keysContainer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  height: 100%;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.numbers li,
+.operators li {
+  background-color: #42522f;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #263238;
+}
+
+.numbers li:hover,
+.operators li:hover {
+  background-color: #263238;
+}
+
+.operators li {
+  padding: 5px 15px;
+}
+
+#display {
+  border: 2px solid #182c1f;
+  border-radius: 10px;
+  outline: none;
+  cursor: not-allowed;
+  font-size: 28px;
+  height: 35%;
+  padding: 5px;
+  background-color: whitesmoke;
+  overflow: auto;
+  position: relative;
+}
+
+#input {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-family: monospace;
+}
+
+#result {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-family: monospace;
+}
+
+#line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #263238;
+  height: 2px;
+  width: 90%;
+  border-radius: 55%;
+}
